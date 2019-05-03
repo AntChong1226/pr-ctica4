@@ -7,7 +7,7 @@ function make_me_a_controller(array $args, string $file_content):void{
 		if($file){
       echo $args[1].PHP_EOL;
       echo $file_content;
-			fwrite($file,$args[1]);
+			fwrite($file,$file_content);
 			fclose($file);
 			echo "file created";
 		}
